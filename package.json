@@ -28,12 +28,15 @@
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-plugin-sitemap": "^2.9.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-remark": "^2.13.1",
     "gatsby-transformer-sharp": "^2.9.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-modal": "^3.12.1",
+    "react-reveal": "^1.2.2"
   }
 }
