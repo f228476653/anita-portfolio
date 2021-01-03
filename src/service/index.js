@@ -1,5 +1,5 @@
-const API_URL = 'https://draw-dtz.begin.app/graphql';
- //const API_URL = 'http://127.0.0.1:3333/graphql'
+//const API_URL = 'https://draw-ky4-staging.begin.app/graphql';
+const API_URL = 'http://127.0.0.1:3333/graphql'
 
 const query = `
 {  
@@ -46,6 +46,7 @@ const query = `
 async function queryData() {
     let result = await fetch(API_URL, {
         method: 'post',
+        mode: 'cors',
         body: JSON.stringify({query})
     });
 
