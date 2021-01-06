@@ -1,5 +1,5 @@
-//const API_URL = 'https://draw-ky4-staging.begin.app/graphql';
-const API_URL = 'http://127.0.0.1:3333/graphql'
+const API_URL = 'https://draw-ky4-staging.begin.app/graphql';
+//const API_URL = 'http://127.0.0.1:3333/graphql'
 
 const query = `
 {  
