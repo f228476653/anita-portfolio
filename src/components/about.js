@@ -23,9 +23,9 @@ const About = ({ about }) => {
               {about.aboutParaFour}
             </p>
           </div>
-          <div className="image-wrapper">
+          {/* <div className="image-wrapper">
             <img id="about-image" src={about.aboutImage} alt="about"></img>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

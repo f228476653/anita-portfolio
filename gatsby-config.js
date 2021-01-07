@@ -3,6 +3,7 @@ module.exports = {
     title: `Anita's Portfolio`,
     description: `Welcome to my Portfolio Website. Find out more about me and my projects.`,
     author: `Anita Chang`,
+    siteUrl:`https://f228476653.github.io/anita-portfolio/`,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -42,4 +43,5 @@ module.exports = {
       __key: "pages",
     },
   ],
+  pathPrefix: "/anita-portfolio",
 };

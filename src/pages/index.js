@@ -11,16 +11,69 @@ import Skills from '../components/skills';
 import Footer from '../components/Footer';
 
 // Service
-import queryData from '../service';
+import schema from '../schema';
+//import queryData from '../service';
+const query = `
+{  
+    header {
+        name,
+        avatarImg,
+        headerTagline,
+        headerParagraph,
+        contactEmail
+    }
+    work {
+        id,
+        title,
+        para,
+        imageSrc,
+        url
+    }
+    about {
+        aboutParaOne,
+        aboutParaTwo,
+        aboutParaThree,
+        aboutParaFour,
+        aboutImage
+    }
+    skills {
+        id
+        img,
+        para,
+        references {
+            title,
+            description,
+            link
+        }
+    }
+    contact {
+        contactSubHeading
+        social {
+            img
+            url
+        }
+    }
+}`;
 
 const IndexPage = () => {
   const [data, setData] = useState(undefined);
 
   useState(() => {
-    queryData().then(response => {
-      setData(response.data);
-    });
+    // queryData().then(response => {
+    //   setData(response.data);
+    // });
+    setData(schema.schema);
   });
+
+
+  // async function queryData() {
+  //   return await fetch('http://127.0.0.1:3333/graphql', {
+  //     method: 'POST',
+  //     mode: 'no-cors',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify({query})
+  //   })
+  // }
   
   return (
     <Layout>
